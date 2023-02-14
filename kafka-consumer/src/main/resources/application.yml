@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: local
+server:
+  port: 8081
+#---
+#spring:
+#  config:
+#    activate:
+#      on-profile: local
+#  kafka:
+#    template:
+#      default-topic: demo_java
+#    consumer:
+#      bootstrap-servers: localhost:9092
+##      bootstrap-servers: localhost:9092,localhost:9093,localhost:9094
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      group-id: my-java-application
+#      auto-offset-reset: latest
+#    producer:
+#      bootstrap-servers:
+#          #        -   localhost:9092,localhost:9093,localhost:9094
+#        - localhost:9092
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
